@@ -12,15 +12,31 @@ The template establishes three distinct knowledge layers:
 
 It also installs authority rules, decision and correction records, an append-only knowledge log, page templates, and mechanical wiki linting.
 
-## Use it in a new project
+## Quick start — one action
 
-Clone this repository somewhere convenient:
+Open the project you want to initialize in Codex or another capable coding agent, then send this prompt:
+
+```text
+Initialize this project with Sijil. Read and follow the bootstrap contract at
+https://raw.githubusercontent.com/Alkhayal7/sijil/main/WIKI_BOOTSTRAP.md
+
+Inspect this repository before editing it, adapt the wiki to its actual domains,
+preserve existing work, and complete every required verification before handoff.
+```
+
+The agent should retrieve the contract, inspect the current repository, create and seed its wiki, integrate validation with its existing command interface, and report any decisions that still require the project owner. The user does not need to clone Sijil or copy files manually.
+
+The bootstrap is intentionally an instruction document rather than a prefilled wiki. This prevents product decisions, architecture, task IDs, and terminology from one project leaking into another.
+
+## Offline or restricted-agent fallback
+
+If the agent cannot access GitHub, clone Sijil locally:
 
 ```bash
 git clone https://github.com/Alkhayal7/sijil.git
 ```
 
-Open your target project with an AI coding agent and provide it with [`WIKI_BOOTSTRAP.md`](WIKI_BOOTSTRAP.md). Use this request:
+Then attach or provide `sijil/WIKI_BOOTSTRAP.md` to the agent with this prompt:
 
 ```text
 Follow WIKI_BOOTSTRAP.md in full to initialize and seed this project's wiki.
@@ -29,11 +45,7 @@ map to this project, preserve existing work, and run every required verification
 before handoff.
 ```
 
-The bootstrap is intentionally an instruction document rather than a prefilled wiki. This prevents product decisions, architecture, task IDs, and terminology from one project leaking into another.
-
-## Use it in an existing project
-
-Give the bootstrap document to the agent and tell it which repository is the target. The agent is required to inspect and preserve existing contributor instructions, documentation, task systems, command interfaces, and uncommitted work before integrating the wiki.
+The same workflow applies to new and existing projects. The contract requires the agent to preserve existing contributor instructions, documentation, task systems, command interfaces, and uncommitted work.
 
 ## Optional owner context
 
