@@ -40,25 +40,6 @@ https://raw.githubusercontent.com/Alkhayal7/sijil/main/WIKI_BOOTSTRAP.md
 
 The bootstrap is intentionally an instruction document rather than a prefilled wiki. This prevents product decisions, architecture, task IDs, and terminology from one project leaking into another.
 
-## Offline or restricted-agent fallback
-
-If the agent cannot access GitHub, clone Sijil locally:
-
-```bash
-git clone https://github.com/Alkhayal7/sijil.git
-```
-
-Then attach or provide `sijil/WIKI_BOOTSTRAP.md` to the agent with this prompt:
-
-```text
-Follow WIKI_BOOTSTRAP.md in full to initialize and seed this project's wiki.
-Inspect the target repository before editing it. Adapt the domains and authority
-map to this project, preserve existing work, and run every required verification
-before handoff.
-```
-
-The same workflow applies to new and existing projects. The contract requires the agent to preserve existing contributor instructions, documentation, task systems, command interfaces, and uncommitted work.
-
 ## Optional owner context
 
 The agent can begin from repository evidence alone. Results improve if you also provide:
