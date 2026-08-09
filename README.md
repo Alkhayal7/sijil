@@ -1,6 +1,8 @@
-# Project Wiki Template
+# Sijil — سِجِلّ
 
-A reusable bootstrap contract for creating a repository-local project wiki maintained by humans and AI agents.
+**Sijil** means a record or register: something written so knowledge, decisions, and history remain traceable over time.
+
+Sijil is a reusable bootstrap contract for creating a repository-local project wiki maintained by humans and AI agents.
 
 The template establishes three distinct knowledge layers:
 
@@ -15,7 +17,7 @@ It also installs authority rules, decision and correction records, an append-onl
 Clone this repository somewhere convenient:
 
 ```bash
-git clone <this-repository-url> project-wiki-template
+git clone https://github.com/Alkhayal7/sijil.git
 ```
 
 Open your target project with an AI coding agent and provide it with [`WIKI_BOOTSTRAP.md`](WIKI_BOOTSTRAP.md). Use this request:
@@ -52,7 +54,3 @@ Informal context does not become durable truth until the initializing agent reco
 |---|---|
 | [`WIKI_BOOTSTRAP.md`](WIKI_BOOTSTRAP.md) | Complete initialization and maintenance instructions for an AI agent |
 | [`AGENTS.md`](AGENTS.md) | Rules for maintaining this reusable template repository |
-
-## License
-
-No license has been selected yet. Add the license appropriate to how you intend to distribute the template before publishing it.
