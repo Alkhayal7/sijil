@@ -4,6 +4,21 @@ You are responsible for creating and seeding a durable, repository-local wiki fo
 
 Follow this document in full. Do not merely create empty folders. First understand the target repository, then build a useful wiki from evidence that actually exists. Adapt names and domains to the project. Never copy another project's product decisions, architecture, vendors, milestones, task IDs, or terminology.
 
+## Invocation and navigation
+
+When a user says `Initialize this project with https://github.com/Alkhayal7/sijil`, the repository already open in the agent's workspace is the **target project**. This Sijil repository is reference material, not the target.
+
+Before acting:
+
+1. Read this entire contract.
+2. Return to the target project's root.
+3. Follow the numbered sections in order.
+4. Read and preserve the target's own agent/contributor instructions before editing.
+5. Create wiki and integration files only inside the target project.
+6. Do not copy Sijil's `README.md`, repository-level `AGENTS.md`, Git history, or branding into the target.
+
+If the agent cannot determine which workspace/repository is the target, ask the user for its path before making changes.
+
 ## 1. Objective
 
 Create a `wiki/` directory that becomes the project's persistent memory and provides:

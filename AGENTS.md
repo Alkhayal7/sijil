@@ -9,7 +9,7 @@ When changing `WIKI_BOOTSTRAP.md`:
 - preserve the source → synthesis → task separation and explicit authority model;
 - require agents to inspect a target repository before changing it;
 - avoid adding dependencies or automation that the target project may not use;
-- keep the bootstrap usable by Codex and other capable coding agents;
+- keep the bootstrap usable across capable AI coding agents;
 - update `README.md` when usage or repository contents change;
 - run `git diff --check` before handoff.
 

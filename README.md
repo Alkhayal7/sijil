@@ -14,17 +14,29 @@ It also installs authority rules, decision and correction records, an append-onl
 
 ## Quick start — one action
 
-Open the project you want to initialize in Codex or another capable coding agent, then send this prompt:
+In the project you want to initialize, give your AI coding agent this instruction:
 
 ```text
-Initialize this project with Sijil. Read and follow the bootstrap contract at
-https://raw.githubusercontent.com/Alkhayal7/sijil/main/WIKI_BOOTSTRAP.md
-
-Inspect this repository before editing it, adapt the wiki to its actual domains,
-preserve existing work, and complete every required verification before handoff.
+Initialize this project with https://github.com/Alkhayal7/sijil
 ```
 
-The agent should retrieve the contract, inspect the current repository, create and seed its wiki, integrate validation with its existing command interface, and report any decisions that still require the project owner. The user does not need to clone Sijil or copy files manually.
+That is the complete user workflow. The agent should open Sijil, discover the entry point below, inspect the user's current project, create and seed its wiki, integrate validation with its existing command interface, and report decisions that still require the project owner. The user does not need to clone Sijil or copy files manually.
+
+## Agent entry point
+
+If you are an AI agent given the Sijil repository URL to initialize another project:
+
+1. Treat the repository open in your current workspace as the **target project**.
+2. Read [`WIKI_BOOTSTRAP.md`](WIKI_BOOTSTRAP.md) completely before making changes.
+3. Use Sijil as instructions only. Do not replace the target with this repository or copy Sijil's `README.md` or `AGENTS.md` into it.
+4. Follow the bootstrap sections in order: inspect → map domains and authority → create and seed → integrate validation → verify → hand off.
+5. Make changes only in the target project. Preserve its existing instructions and uncommitted work.
+
+If you reached this README through a browser or repository tool, the direct contract is:
+
+```text
+https://raw.githubusercontent.com/Alkhayal7/sijil/main/WIKI_BOOTSTRAP.md
+```
 
 The bootstrap is intentionally an instruction document rather than a prefilled wiki. This prevents product decisions, architecture, task IDs, and terminology from one project leaking into another.
 
